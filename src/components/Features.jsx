@@ -1,6 +1,6 @@
 import React from 'react';
 import FeatureCard from './FeatureCard';
-import { FaHandSparkles, FaSmile, FaRunning, FaBookOpen, FaMusic, FaUsers } from 'react-icons/fa';
+import { FaHandSparkles, FaSmile, FaRunning, FaBookOpen, FaUsers } from 'react-icons/fa';
 
 const featuresData = [
   {
@@ -28,12 +28,6 @@ const featuresData = [
     link: "https://nritya-ai-interpretation-engine.vercel.app/"
   },
   {
-    title: "Rhythm Analysis",
-    description: "Analyzes tala, beat patterns, and movement rhythm to understand dance structure.",
-    icon: <FaMusic />,
-    link: "https://your-rhythm-module.vercel.app/"
-  },
-  {
     title: "Community",
     description: "A collaborative space to connect, share, learn, and grow together.",
     icon: <FaUsers />,
@@ -43,16 +37,16 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <section id="features" className="relative py-32 px-6 md:px-12 z-10">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+    <section id="features" className="relative py-32 px-4 sm:px-6 md:px-8 z-10 w-full overflow-hidden">
+      <div className="max-w-[1600px] w-full mx-auto">
+        <div className="text-center mb-16 md:mb-20">
           <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
             Core <span className="text-gradient-gold">Features</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto gold-glow" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 xl:gap-8">
           {featuresData.map((feature, index) => (
             <FeatureCard
               key={index}
