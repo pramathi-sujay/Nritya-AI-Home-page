@@ -7,7 +7,7 @@ const featuresData = [
     title: "Mudra Detection",
     description: "AI-based recognition of Bharatanatyam mudras and hand gestures in real time.",
     icon: <FaHandSparkles />,
-    link: "https://your-mudra-module.vercel.app/"
+    link: "https://mudra-detection.vercel.app/"
   },
   {
     title: "Bhava Detection",
